@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "ai.byteask/embedded-docs",
+  "description": "Page-cited retrieval over primary-source embedded/firmware references for coding agents. Returns verbatim cited spec text or an honest 'no confident match', never a guessed register value.",
+  "version": "1.0.0",
+  "websiteUrl": "https://docs.byteask.ai/embedded",
+  "repository": {
+    "url": "https://github.com/ByteAsk/ByteAsk-Embedded-MCP",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.byteask.ai/mcp"
+    }
+  ]
+}
