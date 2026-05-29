@@ -23,6 +23,28 @@ and when nothing is relevant enough it says **no match** rather than fabricate.
 
 ---
 
+## The official hosted server
+
+You don't need to run anything to use ByteAsk Embedded Docs — there's a hosted
+server with the full licensed corpus behind it. It gives Claude Code, Codex,
+Cursor, and any MCP client exact, **page-cited** facts from embedded and firmware
+reference docs: register maps, protocol function codes, SCPI commands, standard
+thresholds, datasheet specs. The guarantee is *verbatim source, or "no match" —
+never an invented value*.
+
+- **Name:** `byteask-embedded-docs`
+- **Endpoint:** `https://mcp.byteask.ai/mcp` (Streamable HTTP)
+- **Docs & per-client setup:** <https://docs.byteask.ai/embedded>
+
+```bash
+claude mcp add --transport http byteask-embedded-docs https://mcp.byteask.ai/mcp
+```
+
+See [Connect a client](#connect-a-client) below for Cursor / Codex and the local
+build. This repository is the open-source server that powers that endpoint.
+
+---
+
 ## The tools
 
 Two retrieval tools plus a request tool. Input is natural language (or an exact
